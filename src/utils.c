@@ -17,6 +17,17 @@ int choice_input_validation(int *choice, const char *prompt) {
     printf("Choice is not number. Program stopped.\n");
     exit(1);
   }
+
+  if (*choice < 1 || *choice > 5) {
+    printf("Choose input is not valid. Program stopped.\n");
+    return 1;
+  }
+
+  if (*choice == 5) {
+    printf("Thanks for using C-CALC!\n");
+    return 0;
+  }
+
   return *choice;
 }
 

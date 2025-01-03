@@ -18,16 +18,6 @@ int main() {
 
   choice_input_validation(&choice, "Choose operation (1-5): ");
 
-  if (choice < 1 || choice > 5) {
-    printf("Choose input is not valid. Program stopped.\n");
-    return 1;
-  }
-
-  if (choice == 5) {
-    printf("Thanks for using C-CALC!\n");
-    return 0;
-  }
-
   x = add_input_validation("Enter the first number: ");
   y = add_input_validation("Enter the last number: ");
 
